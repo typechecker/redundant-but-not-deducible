@@ -50,7 +50,7 @@ instance (Monad m, EventClientMonad m) => Thingy m where
 --        • Could not deduce (Monad m)
 --            arising from the superclasses of an instance declaration
 --          from the context: EventClientMonad m
---            bound by the instance declaration at src/Client.hs:36:10-39
+--            bound by the instance declaration at src/Client.hs
 --          Possible fix:
 --            add (Monad m) to the context of the instance declaration
 --        • In the instance declaration for ‘Thingy m’
