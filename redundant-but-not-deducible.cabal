@@ -9,7 +9,7 @@ category:      Language
 build-type:    Simple
 
 library
-  exposed-modules:  Client
+  exposed-modules:  EventThing
   build-depends:    base
   hs-source-dirs:   src
   default-language: Haskell2010

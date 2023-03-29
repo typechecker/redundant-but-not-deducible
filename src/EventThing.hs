@@ -2,11 +2,10 @@
 {-# LANGUAGE UndecidableInstances #-}
 {-# OPTIONS_GHC -Werror=redundant-constraints #-}
 
-module Client where
+module EventThing where
 
 class Monad m => Event m where
   thingsForEvent :: m [Int]
-  thingsForEvent = undefined
 
 things :: Event m => m [Int]
 things = thingsForEvent
@@ -32,7 +31,7 @@ instance (Monad m, Event m) => Thingy m where
 --        • Could not deduce (Monad m)
 --            arising from the superclasses of an instance declaration
 --          from the context: Event m
---            bound by the instance declaration at src/Client.hs
+--            bound by the instance declaration at src/EventThing.hs
 --          Possible fix:
 --            add (Monad m) to the context of the instance declaration
 --        • In the instance declaration for ‘Thingy m’
